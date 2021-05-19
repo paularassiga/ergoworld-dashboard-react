@@ -14,12 +14,6 @@ Para conocer más sobre el proyecto y como fue llevado a cabo, dejamos a disposi
 
 ## Integrantes del equipo
 
-### Paula Rassiga 
-
-Economista (UdeSA). Emprendedora con experiencia en Marketing Digital y Diseño UX/UI.
-
-Email: paularassiga@gmail.com
-
 ### Peterson Flemm
 
 Desarrollador autodictacta, su curiosidad y ganas de aprender son sus principales impulsores, estudiante de Cs. de La Computacion (UC).
@@ -32,3 +26,8 @@ Estudiante de Tecnologias de la informacion y de Programacion Web Full Stack en 
 
 Email: guille4542@gmail.com
 
+### Paula Rassiga 
+
+Economista (UdeSA). Emprendedora con experiencia en Marketing Digital y Diseño UX/UI.
+
+Email: paularassiga@gmail.com
