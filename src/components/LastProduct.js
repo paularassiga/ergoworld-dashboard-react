@@ -21,3 +21,4 @@ function LastProduct(){
 }
 
 export default LastProduct;
+

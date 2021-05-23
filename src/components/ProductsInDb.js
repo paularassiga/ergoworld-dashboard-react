@@ -13,7 +13,6 @@ function ProductsInDb(){
             return respuesta.json()
         })
         .then(data =>{
-          console.log(data)
             setProductList(data.products)
         })
         .catch(error => console.log(error))
