@@ -1,4 +1,3 @@
-import imagenFondo from '../assets/images/base-laptop.jpg';
 import React, {Component} from 'react';
 
 class LastProduct extends Component {
@@ -32,7 +31,6 @@ class LastProduct extends Component {
                         <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: 40 +'rem'}} src={this.state.lastProduct.image} alt=" Star Wars - Mandalorian "/>
                     </div>
                     <p>{this.state.lastProduct.description}</p>
-                    <a className="btn btn-danger" target="_blank" rel="nofollow" href={this.state.lastProduct.detail}>Ver detalle del producto</a>
                 </div>
             </div>
         </div>
