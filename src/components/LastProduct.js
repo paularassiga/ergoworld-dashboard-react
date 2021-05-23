@@ -1,24 +1,43 @@
-import React from 'react';
 import imagenFondo from '../assets/images/base-laptop.jpg';
+import React, {Component} from 'react';
 
-function LastProduct(){
+class LastProduct extends Component {
+
+    constructor(props){
+        super(props);
+        this.state = {
+			lastProduct: []
+        }
+    }
+
+    componentDidMount(){
+        fetch(`/api/products/ultimoProductoCreado`).then(x=>{
+            return x.json()
+        }).then(lastProduct=>{
+            console.log(lastProduct)
+            this.setState({
+                lastProduct : lastProduct.products[0]
+            })
+        }).catch(error=>console.log(error))
+    }
+    render (){
     return(
         <div className="col-lg-6 mb-4">
             <div className="card shadow mb-4">
                 <div className="card-header py-3">
-                    <h5 className="m-0 font-weight-bold text-gray-800">Último producto creado</h5>
+                    <h5 className="m-0 font-weight-bold text-gray-800">Último producto creado: {this.state.lastProduct.name}</h5>
                 </div>
                 <div className="card-body">
                     <div className="text-center">
-                        <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: 40 +'rem'}} src={imagenFondo} alt=" Star Wars - Mandalorian "/>
+                        <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: 40 +'rem'}} src={this.state.lastProduct.image} alt=" Star Wars - Mandalorian "/>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequatur explicabo officia inventore libero veritatis iure voluptate reiciendis a magnam, vitae, aperiam voluptatum non corporis quae dolorem culpa citationem ratione aperiam voluptatum non corporis ratione aperiam voluptatum quae dolorem culpa ratione aperiam voluptatum?</p>
-                    <a className="btn btn-danger" target="_blank" rel="nofollow" href="/">Ver detalle del producto</a>
+                    <p>{this.state.lastProduct.description}</p>
+                    <a className="btn btn-danger" target="_blank" rel="nofollow" href={this.state.lastProduct.detail}>Ver detalle del producto</a>
                 </div>
             </div>
         </div>
     )
-}
+}}
 
 export default LastProduct;
 
