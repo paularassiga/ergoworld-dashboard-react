@@ -6,7 +6,6 @@ import Products  from './Products';
 function ProductsInDb(){
     const [productList, setProductList] = useState([]);
 
-
      useEffect( ()=> {
         fetch('/api/products')
         .then(respuesta =>{
@@ -17,7 +16,6 @@ function ProductsInDb(){
         })
         .catch(error => console.log(error))
     },[])
-
     
     return (
         <React.Fragment>
