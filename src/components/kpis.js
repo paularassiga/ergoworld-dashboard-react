@@ -8,7 +8,7 @@ import SmallCard from './SmallCard';
 let moviesInDB = {
     title: 'Total de productos',
     color: 'primary', 
-    cuantity: 21,
+    cuantity: 4,
     icon: 'fa-clipboard-list'
 }
 
@@ -17,7 +17,7 @@ let moviesInDB = {
 let totalAwards = {
     title:' Total de categorías', 
     color:'success', 
-    cuantity: '79',
+    cuantity: '10',
     icon:'fa-award'
 }
 
@@ -26,7 +26,7 @@ let totalAwards = {
 let actorsQuantity = {
     title:'Total de usuarios' ,
     color:'warning',
-    cuantity:'49',
+    cuantity:'7',
     icon:'fa-user-check'
 }
 
