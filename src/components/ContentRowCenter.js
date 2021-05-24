@@ -10,8 +10,6 @@ function ContentRowCenter(){
             <LastProduct />
             <LastUser />
             <ProductsInDb />
-            <Categories />
-
         </div>
     )
 }

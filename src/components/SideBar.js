@@ -72,13 +72,6 @@ function SideBar(){
                         <span>Ultimo usuario creado</span>
                 </Link>
                 </li>
-                 {/*<!-- Nav Item - Charts -->*/}
-                 <li className="nav-item">
-                <Link className="nav-link" to="/Categories">
-                        <i className="fas fa-fw fa-chart-area"></i>
-                        <span>Categorias</span>
-                </Link>
-                </li>
 
                 
 
